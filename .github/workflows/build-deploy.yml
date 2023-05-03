@@ -90,5 +90,6 @@ jobs:
           password: ${{secrets.PROD_PASSWORD}}
           script: |
             cd app/src
+            git reset --hard
             git pull
             echo ${{secrets.PROD_PASSWORD}} | sudo -S systemctl restart api

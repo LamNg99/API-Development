@@ -26,6 +26,6 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Deploy using CI/CD to Ubuntu server!"}
+    return {"message": "Deploy using CI/CD to Ubuntu server."}
 
 
