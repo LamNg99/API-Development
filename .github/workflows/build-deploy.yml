@@ -82,7 +82,7 @@ jobs:
     # git pull
     # systemctl restart api
     steps:
-    - name: deploy to ubuntu server
+      - name: deploy to ubuntu server
         uses: appleboy/ssh-action@master
         with:
           host: ${{secrets.PROD_HOST}}
